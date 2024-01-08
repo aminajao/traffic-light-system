@@ -81,3 +81,7 @@ export const Red = styled(Light)`
   background-color: ${({ active }) =>
     active ? 'rgb(255, 0, 0)' : 'rgba(255, 0, 0, 0.25)'};
 `;
+
+export const StreetLabel = styled.p`
+  margin-left: -100px;
+`;

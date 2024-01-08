@@ -8,6 +8,7 @@ import {
   LightContainer,
   LightMidBox,
   Controller,
+  StreetLabel,
   LightMidContainer,
   Button,
 } from './style';
@@ -23,6 +24,7 @@ const TrafficLight = ({ cycle, handleStart, handleReset }) => {
 
   return (
     <Container>
+      <p>Street A</p>
       <LightContainer>
         <TrafficLightBoard>
           <Red active={isStreetARed} />
@@ -31,6 +33,7 @@ const TrafficLight = ({ cycle, handleStart, handleReset }) => {
         </TrafficLightBoard>
       </LightContainer>
       <LightMidBox>
+        <StreetLabel>Street B</StreetLabel>
         <LightMidContainer>
           <TrafficLightBoard>
             <Red active={isStreetBRed} />
